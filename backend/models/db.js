@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const conn_string="mongodb+srv://rafay:rafay@cluster0.gbkoiro.mongodb.net/auth-db?retryWrites=true&w=majority&appName=Cluster0"
+const conn_string=process.env.Mongo_Conn
 
 mongoose.connect(conn_string).then(()=>{
     console.log("MongoDB Connected")
