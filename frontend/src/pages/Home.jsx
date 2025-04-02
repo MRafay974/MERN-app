@@ -29,7 +29,7 @@ export default function Home(){
      async function fetchProducts(){
         try{
 
-            const url="http://localhost:8080/products"
+            const url="https://mern-app-three-lime.vercel.app/products"
             const header={
                 headers:{
                     'authorization':localStorage.getItem('Token')
